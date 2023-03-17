@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert to JSON</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Convert to JSON</div>
+      <form class="form">
+        <textarea class="textbox" id="input-text" placeholder="Enter text here"></textarea>
+        <button class="btn" type="button" onclick="convert_to_json()">Convert</button>
+        <textarea class="textbox" id="output-json" placeholder="JSON output will appear here" readonly></textarea>
+      </form>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
+
+
